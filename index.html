@@ -1,12 +1,43 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-  
-  
-  
+    <head>
+        <title> Tubelight  </title>
+        <link rel="stylesheet" href="styles.css"
+    </head>
 <body>
-  
-<h1>Hello World!</h1>
+   <center>  <h1 id="2"> TUBELIGHT  </h1>
+    <h2> Desh Ka Pagalkhana </h2><br>
+    
+    <hr>
+    
+<form>
+    <label for="username">Email/Mobile</label><br>
+    <input type="text" id="username" name="username"    ><br>
+    <label for="password">Password</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="button" value="Login">
+</form>
 
-
+<script>
+    function light(alt){
+        var pic;
+        if (alt==0) {
+            pic=""
+        }
+        else {
+            pic="https://i.ytimg.com/vi/AFeoFr3aXFE/hqdefault.jpg"
+        }
+        document.getElementById('img').src = pic;
+    }
+   
+    </script>
+ <img id="img" src="https://static.bhphotovideo.com/explora/sites/default/files/light1.gif" 
+  width="100" height="100"><br>
+ <p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+  <br>
+     
 </body>
 </html>
